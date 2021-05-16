@@ -11,6 +11,7 @@
 		7E67265F2650219B00A0520E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E67265E2650219B00A0520E /* ContentView.swift */; };
 		7E6726612650219C00A0520E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E6726602650219C00A0520E /* Assets.xcassets */; };
 		7E6726642650219C00A0520E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E6726632650219C00A0520E /* Preview Assets.xcassets */; };
+		7EA978AA2651B1AA00FF90D1 /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7EA978A92651B1AA00FF90D1 /* SleepCalculator.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		7E6726602650219C00A0520E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E6726632650219C00A0520E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7E6726652650219C00A0520E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EA978A92651B1AA00FF90D1 /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = SleepCalculator.mlmodel; path = ../../../../../../../../Desktop/SleepCalculator.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				7E67265E2650219B00A0520E /* ContentView.swift */,
 				7E6726602650219C00A0520E /* Assets.xcassets */,
 				7E6726652650219C00A0520E /* Info.plist */,
+				7EA978A92651B1AA00FF90D1 /* SleepCalculator.mlmodel */,
 				7E6726622650219C00A0520E /* Preview Content */,
 			);
 			path = Project_4_BetterRest;
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E67265F2650219B00A0520E /* ContentView.swift in Sources */,
+				7EA978AA2651B1AA00FF90D1 /* SleepCalculator.mlmodel in Sources */,
 				7E67265D2650219B00A0520E /* Project_4_BetterRestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
