@@ -23,10 +23,12 @@ struct ContentView: View {
         return Calendar.current.date(from: components) ?? Date()
     }
     
+    private var nbOfCups: Array = [0, 1, 2 ,3, 4, 5, 6, 7, 8 ,9 ,10]
+    
     var body: some View {
         NavigationView {
             Form {
-                VStack(alignment: .leading, spacing: 4) {
+                Section() {
                     Text("Choose your wake-up")
                         .font(.headline)
                     DatePicker("", selection: $wakeUp, displayedComponents: .hourAndMinute)
@@ -34,7 +36,7 @@ struct ContentView: View {
                         .datePickerStyle(WheelDatePickerStyle())
                 }
                 
-                VStack(alignment: .leading, spacing: 4) {
+                Section() {
                     Text("Desired amount of sleep")
                         .font(.headline)
                     Stepper(value: $sleepAmount, in: 4...12, step: 0.25) {
@@ -42,14 +44,16 @@ struct ContentView: View {
                     }
                 }
                 
-                VStack(alignment: .leading, spacing: 4) {
+                Section() {
                     Text("Daily coffee intake")
                         .font(.headline)
-                    Stepper(value: $coffee, in: 1...10) {
-                        if self.coffee == 1 {
-                            Text("1 cup")
-                        } else {
-                            Text("\(self.coffee) cups")
+                    Picker("", selection: $coffee) {
+                        ForEach(0..<nbOfCups.count) { cup in
+                            if cup == 0 || cup == 1 {
+                                Text("\(nbOfCups[cup]) cup")
+                            } else {
+                                Text("\(nbOfCups[cup]) cups")
+                            }
                         }
                     }
                 }
